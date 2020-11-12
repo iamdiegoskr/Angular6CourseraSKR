@@ -15,6 +15,6 @@
             </li>
         </ul>
         <a href="#" class="btn-card" (click)="Ir()">Ir!</a>
-        <span class="badge badge-success" [style.display]="destino.isSelected() ? '' : 'none' ">PREFERIDO</span>
+        <span class="badge badge-success" *ngIf="destino.isSelected()">PREFERIDO</span>
     </div>
 </div>
