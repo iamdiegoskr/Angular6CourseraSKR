@@ -5,7 +5,12 @@
     </div>
     <div class="card-desc">
         <h3> {{destino.nombre}} </h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis voluptas totam</p>
+        <p class="mt-2">Servicios</p>
+        <ul class="text-left">
+            <li *ngFor="let service of destino.servicios">
+                <span> {{service}} </span>
+            </li>
+        </ul>
         <a href="#" class="btn-card" (click)="Ir()">Ir!</a>
         <span class="badge badge-success" [style.display]="destino.isSelected() ? '' : 'none' ">PREFERIDO</span>
     </div>
