@@ -8,7 +8,10 @@
         <p class="mt-2">Servicios</p>
         <ul class="text-left">
             <li *ngFor="let service of destino.servicios">
-                <span> {{service}} </span>
+                <span [ngSwitch]="service"> 
+                    <i *ngSwitchCase="'Desayuno'"  style="color: #1abc9c;"> {{service}} </i>
+                    <i *ngSwitchDefault> {{service}} </i>
+                </span>
             </li>
         </ul>
         <a href="#" class="btn-card" (click)="Ir()">Ir!</a>
