@@ -18,8 +18,17 @@ export class ListaDestinosComponent implements OnInit {
   }
 
   saveDestiny(name:string,imageurl:string):boolean{
-    this.destinos.push(new DestinoViaje(name,imageurl))
+    this.destinos.push(new DestinoViaje(name,imageurl));
     return false;
+  }
+
+  elegido(destino:DestinoViaje){
+    
+    this.destinos.forEach(function(desti){
+        desti.setSelected(false);
+    })
+    
+    destino.setSelected(true);
   }
 
 }
