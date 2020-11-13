@@ -1,5 +1,5 @@
 <div class="container content">
-    <div class="row">
+    <div class="row mb-4">
         <div class="col-md-6 offset-md-3">
             <span class="anchor" id="formLogin"></span>
             <!-- form	card	login	with	validation	feedback	-->
@@ -17,13 +17,12 @@
                             <label for="Imagen	Url">Imagen	Url</label>
                             <input type="text" class="form-control" id="imagenUrl" placeholder="Ingresar url..." #imageurl>
                         </div>
-                        <button type="submit" class="btn btn-primary" (click)="saveDestiny(name.value,imageurl.value)">Guardar!</button>
+                        <button type="submit" class="btn btn-primary btn-block" (click)="saveDestiny(name.value,imageurl.value)">Guardar!</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <hr class="mb-5">
     <div class="row">
         <app-destino-viaje *ngFor="let desti of destinos, let i=index" [destino]="desti" [idx]="i+1" (clicked)="elegido($event)"></app-destino-viaje>
     </div>

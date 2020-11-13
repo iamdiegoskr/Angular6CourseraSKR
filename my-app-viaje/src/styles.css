@@ -124,3 +124,36 @@ a.btn-card {
     text-decoration: none;
     color: #fff;
 }
+
+header.main-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 20px;
+    background: #007bff;
+}
+
+header.main-header img {
+    padding: 16px;
+}
+
+.main-nav .links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    list-style: none;
+}
+
+.main-nav .links .links-items a {
+    text-decoration: none;
+    padding: 8px 12px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-nav .links .links-items a:hover {
+    color: #81beff;
+}
