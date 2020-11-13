@@ -123,6 +123,8 @@ section {
 a.btn-card {
     text-decoration: none;
     color: #fff;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 header.main-header {
@@ -155,5 +157,10 @@ header.main-header img {
 }
 
 .main-nav .links .links-items a:hover {
+    color: #81beff;
+}
+
+.active-link {
+    /*revisar como solucionar*/
     color: #81beff;
 }
